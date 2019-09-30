@@ -1,0 +1,146 @@
+body.open-request-window {
+  overflow: hidden;
+}
+
+body.open-request-window #request-window {
+ display: block;
+}
+
+div#request-window {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  cursor: default;
+  z-index: 1;
+}
+
+div#request-place {
+  position: relative;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.2vw;
+  box-sizing: border-box;
+}
+
+div.exit {
+  position: absolute;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+div#request-place h1 {
+  color: #4D4D4D;
+}
+
+div#request-place form {
+  color: #838383;
+}
+
+div#request-place textarea {
+  margin: .7vw 0vw;
+  width: 100%;
+  resize: none;
+  border: .15vw solid #E8E8E8;
+  border-radius: .3vw;
+  box-sizing: border-box;
+  color: #838383;
+}
+
+div#request-place input {
+  border: .15vw solid #E8E8E8;
+  border-radius: .3vw;
+  width: 100%;
+  color: #838383;
+  box-sizing: border-box;
+}
+
+
+input.submit-request {
+  margin-bottom: 0vw !important;
+  border: none !important;
+  background: #269A45;
+  color: #ffffff !important;
+  outline: none;
+  transition-duration: .3s;
+}
+
+input.submit-request:hover {
+  background: #30C056 !important;
+}
+
+
+@media screen and (min-width: 768px) {
+  div#request-place {
+    width: 30vw;
+    height: 42.5vw;
+    font-size: 1.3vw;
+    border-radius: 1vw;
+  }
+
+  div.exit {
+    top: 1vw;
+    right: 1vw;
+    line-height: 2vw;
+    font-size: 3vw;
+  }
+
+  div#request-place h1 {
+    padding-bottom: 2.2vw;
+    font-size: 2.4vw;
+  }
+
+  div#request-place textarea {
+    padding: .7vw;
+    height: 3.3vw;
+    font-size: 1.3vw;
+  }
+
+  div#request-place input {
+    height: 3.3vw;
+    margin: .7vw 0vw 2.1vw 0vw;
+    font-size: 1.3vw;
+    padding: .7vw;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  div#request-place {
+    width: 100vw;
+    height: 100vh;
+    font-size: 6vw;
+    border-radius: 0vw;
+  }
+
+  div.exit {
+    top: 3vw;
+    right: 3vw;
+    line-height: 10vw;
+    font-size: 10vw;
+  }
+
+  div#request-place h1 {
+    padding-bottom: 8vw;
+    font-size: 10vw !important;
+  }
+
+  div#request-place textarea {
+    font-size: 6vw;
+    padding: 1.2vw;
+    height: 10vw;
+  }
+
+  div#request-place input {
+    font-size: 6vw;
+    padding: 1.2vw;
+    height: 10vw;
+    margin: 3vw 0vw 7vw 0vw;
+  }
+}

@@ -1,0 +1,56 @@
+div.switch-language {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  border: 2px solid #ABFF2B;
+  border-radius: 20px;
+  height: 20px;
+  width: 70px;
+  background: #ffffff;
+  cursor: pointer;
+  opacity: .3;
+  transition: .3s;
+  transition-timing-function: linear;
+  z-index: 1;
+}
+
+span.ru {
+  position: absolute;
+  left: 10px;
+}
+
+div.switch-language span img {
+  height: 20px;
+}
+
+span.en {
+  position: absolute;
+  right: 10px;
+}
+
+div.switcher {
+  position: absolute;
+  right: 0px;
+  width: 35px;
+  height: 20px;
+  border-radius: 20px;
+  background: #269A45;
+  transition-duration: .4s;
+  z-index: 1;
+}
+
+div.switch-language:hover div.switcher {
+  right: 35px;
+}
+
+div.switch-language:hover {
+  opacity: 1;
+}
+
+body.english-page div.switcher {
+  left: 0px !important;
+}
+
+body.english-page div.switch-language:hover div.switcher {
+  left: 35px !important;
+}
