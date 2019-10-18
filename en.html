@@ -456,10 +456,10 @@
         <div>
           <h1>Feedback</h1>
           <form action="/server/submitform.php" method="POST" class="form form-footer">
-            <input type="text" placeholder="E-mail" name="email">
+            <input type="email" placeholder="E-mail" name="email">
             <textarea placeholder="Write down your question" name="comment"></textarea>
             <input type="text" placeholder="Name" name="name">
-            <input type="text" placeholder="Phone number with country code" name="phone">
+            <input type="tel" placeholder="Phone number with country code" name="phone">
             <input type="submit" value="Submit" class="submit submit-footer">
           </form>
         </div>
@@ -479,10 +479,10 @@
           <input type="text" name="name" required="true">
 
           <p>Phone</p>
-          <input type="text" name="phone" required="true">
+          <input type="tel" name="phone" required="true">
 
           <p>E-mail</p>
-          <input type="text" name="email" required="true">
+          <input type="email" name="email" required="true">
 
           <p>Comment</p>
           <textarea name="comment" required="true"></textarea>

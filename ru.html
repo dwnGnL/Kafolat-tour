@@ -459,10 +459,10 @@
           <h1>Обратная связь</h1>
 
           <form action="/server/submitform.php" method="POST" class="form form-footer">
-            <input type="text" placeholder="E-mail" name="email">
+            <input type="email" placeholder="E-mail" name="email">
             <textarea placeholder="Запишите интересующий вас вопрос" name="comment"></textarea>
             <input type="text" placeholder="Имя" name="name">
-            <input type="text" placeholder="Номер телефона с кодом страны" name="phone">
+            <input type="tel" placeholder="Номер телефона с кодом страны" name="phone">
             <input type="submit" value="Отправить" class="submit submit-footer">
           </form>
         </div>
@@ -482,10 +482,10 @@
           <input type="text" name="name" required="true">
 
           <p>Телефон</p>
-          <input type="text" name="phone" required="true">
+          <input type="tel" name="phone" required="true">
 
           <p>E-mail</p>
-          <input type="text" name="email" required="true">
+          <input type="email" name="email" required="true">
 
           <p>Коментарий</p>
           <textarea name="comment" required="true"></textarea>
